@@ -10,8 +10,8 @@ import spark.Spark;
  */
 public class HelloWorldMavenSpark {
     public static void main(String[] args) {
-        Spark.get("/",new Route(){
 
+        Spark.get("/",new Route(){
             @Override
             public Object handle(Request request, Response response) throws Exception {
                 return "Hello World from Spark";
